@@ -33,7 +33,7 @@ jobs:
         password: "sandeepsaveetha"
     # step 6
     - name: Build the Docker Image
-      run: docker build --file Dockerfile --tag saisandeep17/calculator:latest
+      run: docker build . --file Dockerfile --tag saisandeep17/calculator:latest
     # step 7
     - name: Push the Docker Image
       run: docker push saisandeep17/calculator:latest
